@@ -2,30 +2,26 @@ import java.util.List;
 
 public class ProductCategory {
     private String key;
-    private LocalizedString name;
-    private LocalizedString slug;
-    private LocalizedString description;
-    private List<ProductCategoryReference> ancestors;
+    private String name;
+    private String slug;
+    private String description;
+    private List<ProductCategoryReference> ancestors; //sub categorias
     private String orderHint;
-    private String externalId;
-    private LocalizedString metaTitle;
-    private LocalizedString metaDescription;
-    private LocalizedString metaKeywords;
     private List<Asset> assets;
 
     public String getKey() {
         return key;
     }
 
-    public LocalizedString getName() {
+    public String getName() {
         return name;
     }
 
-    public LocalizedString getSlug() {
+    public String getSlug() {
         return slug;
     }
 
-    public LocalizedString getDescription() {
+    public String getDescription() {
         return description;
     }
 
@@ -37,22 +33,6 @@ public class ProductCategory {
         return orderHint;
     }
 
-    public String getExternalId() {
-        return externalId;
-    }
-
-    public LocalizedString getMetaTitle() {
-        return metaTitle;
-    }
-
-    public LocalizedString getMetaDescription() {
-        return metaDescription;
-    }
-
-    public LocalizedString getMetaKeywords() {
-        return metaKeywords;
-    }
-
     public List<Asset> getAssets() {
         return assets;
     }
@@ -61,15 +41,15 @@ public class ProductCategory {
         this.key = key;
     }
 
-    public void setName(LocalizedString name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setSlug(LocalizedString slug) {
+    public void setSlug(String slug) {
         this.slug = slug;
     }
 
-    public void setDescription(LocalizedString description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -81,36 +61,8 @@ public class ProductCategory {
         this.orderHint = orderHint;
     }
 
-    public void setExternalId(String externalId) {
-        this.externalId = externalId;
-    }
-
-    public void setMetaTitle(LocalizedString metaTitle) {
-        this.metaTitle = metaTitle;
-    }
-
-    public void setMetaDescription(LocalizedString metaDescription) {
-        this.metaDescription = metaDescription;
-    }
-
-    public void setMetaKeywords(LocalizedString metaKeywords) {
-        this.metaKeywords = metaKeywords;
-    }
-
     public void setAssets(List<Asset> assets) {
         this.assets = assets;
-    }
-
-    public static class LocalizedString {
-        private String en;
-
-        public String getEn() {
-            return en;
-        }
-
-        public void setEn(String en) {
-            this.en = en;
-        }
     }
 
     public static class ProductCategoryReference {
