@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "sku": "PROD01",
+        "name": "Product 1",
+        "description": "This is a description for Product 1",
+        "categories": [
+            {
+                "id": "1",
+                "name": "Electronics",
+                "description": "Devices or equipment intended for everyday use, most often in entertainment, communications and office productivity"
+            },
+            {
+                "id": "2",
+                "name": "Gadgets",
+                "description": "Small electronic device or tool"
+            }
+        ],
+        "prices": [
+            {
+                "centAmount": 4999,
+                "validFrom": "2022-01-01",
+                "validUntil": "2022-06-30"
+            },
+            {
+                "centAmount": 5999,
+                "validFrom": "2022-07-01",
+                "validUntil": "2022-12-31"
+            }
+        ],
+        "images": [{
+            	"url":"http://example.com/image1.jpg"
+            },{
+            	"url":"http://example.com/image1_2.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "sku": "PROD02",
+        "name": "Product 2",
+        "description": "This is a description for Product 2",
+         "categories": [
+            {
+                "id": "3",
+                "name": "Books",
+                "description": "A collection of sheets of paper bound together to hinge at one edge"
+            },
+            {
+                "id": "4",
+                "name": "Fiction",
+                "description": "Literature in the form of prose, especially novels, that describes imaginary events and people"
+            }
+        ],
+        "prices": [
+            {
+                "centAmount": 1999,
+                "validFrom": "2022-01-01",
+                "validUntil": "2022-06-30"
+            },
+            {
+                "centAmount": 2999,
+                "validFrom": "2022-07-01",
+                "validUntil": "2022-12-31"
+            }
+        ],
+        "images": [{
+            	"url":"http://example.com/image1.jpg"
+            },{
+            	"url":"http://example.com/image1_2.jpg"
+            }
+        ]
+    },{
+        "id": 3,
+        "sku": "PROD03",
+        "name": "Product 3",
+        "description": "This is a description for Product 3",
+        "categories": [
+            {
+                "id": "3",
+                "name": "Books",
+                "description": "A collection of sheets of paper bound together to hinge at one edge"
+            },
+            {
+                "id": "4",
+                "name": "Fiction",
+                "description": "Literature in the form of prose, especially novels, that describes imaginary events and people"
+            }
+        ],
+        "prices": [
+            {
+                "centAmount": 1999,
+                "validFrom": "2022-01-01",
+                "validUntil": "2022-06-30"
+            },
+            {
+                "centAmount": 2999,
+                "validFrom": "2022-07-01",
+                "validUntil": "2022-12-31"
+            }
+        ],
+        "images": [{
+            	"url":"http://example.com/image1.jpg"
+            },{
+            	"url":"http://example.com/image1_2.jpg"
+            }
+        ]
+    }
+ 
+]
