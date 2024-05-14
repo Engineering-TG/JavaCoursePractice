@@ -7,7 +7,7 @@ public class ProductCategory {
 	private String name;
 	private String slug;
 	private String description;
-	private List<ProductCategoryReference> ancestors;
+//	private List<ProductCategoryReference> ancestors;
 	private String orderHint;
 	private String externalId;
 	private String metaTitle;
@@ -29,10 +29,6 @@ public class ProductCategory {
 
 	public String getDescription() {
 		return description;
-	}
-
-	public List<ProductCategoryReference> getAncestors() {
-		return ancestors;
 	}
 
 	public String getOrderHint() {
@@ -73,10 +69,6 @@ public class ProductCategory {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	public void setAncestors(List<ProductCategoryReference> ancestors) {
-		this.ancestors = ancestors;
 	}
 
 	public void setOrderHint(String orderHint) {
