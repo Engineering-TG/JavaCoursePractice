@@ -1,5 +1,3 @@
-package com.engineering.commerce.entities;
-
 import java.time.ZonedDateTime;
 import java.util.List;
 //TODO get set
