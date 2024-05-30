@@ -110,7 +110,6 @@ public class Product {
     public static class MasterVariant {
         private String sku;
         private List<Price> prices;
-        private List<Image> images;
 
         public String getSku() {
             return sku;
@@ -120,9 +119,6 @@ public class Product {
             return prices;
         }
 
-        public List<Image> getImages() {
-            return images;
-        }
 
         public void setSku(String sku) {
             this.sku = sku;
@@ -130,10 +126,6 @@ public class Product {
 
         public void setPrices(List<Price> prices) {
             this.prices = prices;
-        }
-
-        public void setImages(List<Image> images) {
-            this.images = images;
         }
 
         public static class Price {
@@ -165,48 +157,6 @@ public class Product {
 
                 public void setCentAmount(long centAmount) {
                     this.centAmount = centAmount;
-                }
-            }
-        }
-
-        public static class Image {
-            private String url;
-            private Dimensions dimensions;
-
-            public String getUrl() {
-                return url;
-            }
-
-            public Dimensions getDimensions() {
-                return dimensions;
-            }
-
-            public void setUrl(String url) {
-                this.url = url;
-            }
-
-            public void setDimensions(Dimensions dimensions) {
-                this.dimensions = dimensions;
-            }
-
-            public static class Dimensions {
-                private int w;
-                private int h;
-
-                public int getW() {
-                    return w;
-                }
-
-                public int getH() {
-                    return h;
-                }
-
-                public void setW(int w) {
-                    this.w = w;
-                }
-
-                public void setH(int h) {
-                    this.h = h;
                 }
             }
         }

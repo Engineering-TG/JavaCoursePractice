@@ -8,9 +8,7 @@ public class Order {
 
 	private Integer orderId;
 	private LocalDate date;
-	private OrderStatusValues orderStatus;
 	private Integer customerId;
-	private Integer paymentId;
 	private Integer addressId;
 	private List<OrderDetails> orderDetails = new ArrayList<>();
 	
@@ -27,17 +25,6 @@ public class Order {
 		
 	}
  
-	
-	public Order(Integer orderId, LocalDate date, OrderStatusValues orderStatus, Integer customerId, Integer paymentId,
-			Integer addressId, List<OrderDetails> orderDetails) {
-		this.orderId = orderId;
-		this.date = date;
-		this.orderStatus = orderStatus;
-		this.customerId = customerId;
-		this.paymentId = paymentId;
-		this.addressId = addressId;
-		this.orderDetails = orderDetails;
-	}
 
 	public Integer getOrderId() {
 		return orderId;
@@ -55,28 +42,12 @@ public class Order {
 		this.date = date;
 	}
 
-	public OrderStatusValues getOrderStatus() {
-		return orderStatus;
-	}
-
-	public void setOrderStatus(OrderStatusValues orderStatus) {
-		this.orderStatus = orderStatus;
-	}
-
 	public Integer getCustomerId() {
 		return customerId;
 	}
 
 	public void setCustomerId(Integer customerId) {
 		this.customerId = customerId;
-	}
-
-	public Integer getPaymentId() {
-		return paymentId;
-	}
-
-	public void setPaymentId(Integer paymentId) {
-		this.paymentId = paymentId;
 	}
 
 	public Integer getAddressId() {

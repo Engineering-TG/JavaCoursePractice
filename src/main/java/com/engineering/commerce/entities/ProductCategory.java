@@ -7,13 +7,11 @@ public class ProductCategory {
 	private String name;
 	private String slug;
 	private String description;
-	private List<ProductCategoryReference> ancestors;
 	private String orderHint;
 	private String externalId;
 	private String metaTitle;
 	private String metaDescription;
 	private String metaKeywords;
-	private List<Asset> assets;
 
 	public String getKey() {
 		return key;
@@ -29,10 +27,6 @@ public class ProductCategory {
 
 	public String getDescription() {
 		return description;
-	}
-
-	public List<ProductCategoryReference> getAncestors() {
-		return ancestors;
 	}
 
 	public String getOrderHint() {
@@ -55,10 +49,6 @@ public class ProductCategory {
 		return metaKeywords;
 	}
 
-	public List<Asset> getAssets() {
-		return assets;
-	}
-
 	public void setKey(String key) {
 		this.key = key;
 	}
@@ -73,10 +63,6 @@ public class ProductCategory {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	public void setAncestors(List<ProductCategoryReference> ancestors) {
-		this.ancestors = ancestors;
 	}
 
 	public void setOrderHint(String orderHint) {
@@ -99,8 +85,5 @@ public class ProductCategory {
 		this.metaKeywords = metaKeywords;
 	}
 
-	public void setAssets(List<Asset> assets) {
-		this.assets = assets;
-	}
 
 }

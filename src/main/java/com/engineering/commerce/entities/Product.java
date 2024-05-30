@@ -10,7 +10,6 @@ public class Product {
     private List<ProductCategory> categories;
 //    private ProductState state;
     private List<Price> prices;
-    private List<Image> images;
 
     public Product() {
 	}
@@ -57,14 +56,6 @@ public class Product {
 
 	public void setPrices(List<Price> prices) {
 		this.prices = prices;
-	}
-
-	public List<Image> getImages() {
-		return images;
-	}
-
-	public void setImages(List<Image> images) {
-		this.images = images;
 	}
 
 }
