@@ -1,12 +1,15 @@
 import com.engineering.commerce.controllers.ProductController;
 import com.engineering.commerce.controllers.ProductCategoryController;
+import com.engineering.commerce.entities.Price;
 import com.engineering.commerce.entities.Product;
+import com.engineering.commerce.services.PriceService;
 
 public class CommerceTrainingApplication {
 
 	public static void main(String[] args) {
 		ProductController productController = new ProductController();
 		ProductCategoryController productCategoryController = new ProductCategoryController();
+		PriceService priceService = new PriceService();
 
 		// // Acciones
 		// productController.getAllProducts().stream().forEach(product -> {
@@ -39,7 +42,6 @@ public class CommerceTrainingApplication {
 		});
 
 		System.out.println(productCategoryController.getproductCaregorybyId("2").getName());
-
 
 	}
 

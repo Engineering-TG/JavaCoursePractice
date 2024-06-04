@@ -49,7 +49,6 @@ public class ProductCategoryDAO {
     //delete product category
     public void deleteProductCategory(String id){
         productCategories.removeIf(productCategory -> productCategory.getId().equals(id));
-        //System.out.println(productCategories.removeIf(productCategory -> productCategory.getId().equals(id)));
     } 
 
     //return product category by id

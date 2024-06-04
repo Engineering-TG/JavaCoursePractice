@@ -1,0 +1,14 @@
+[
+    {
+        "Id": "1",
+        "centAmount": 4999,
+        "validFrom": "2022-01-01",
+        "validUntil": "2022-06-30"
+    },
+    {
+        "Id": "2",
+        "centAmount": 5999,
+        "validFrom": "2022-07-01",
+        "validUntil": "2022-12-31"
+    }
+]

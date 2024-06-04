@@ -1,7 +1,7 @@
 package com.engineering.commerce.entities;
 
 public class Address {
-	private Integer addressId;
+	private String Id;
 	private Integer customerId;
 	private String street;
 	private String city;
@@ -12,9 +12,9 @@ public class Address {
 	public Address() {
 	}
 	
-	public Address(Integer addressId, Integer customerId, String street, String city, String state, String postalCode,
+	public Address(String Id, Integer customerId, String street, String city, String state, String postalCode,
 			String country) {
-		this.addressId = addressId;
+		this.Id = Id;
 		this.customerId = customerId;
 		this.street = street;
 		this.city = city;
@@ -22,11 +22,11 @@ public class Address {
 		this.postalCode = postalCode;
 		this.country = country;
 	}
-	public Integer getAddressId() {
-		return addressId;
+	public String getId() {
+		return Id;
 	}
-	public void setAddressId(Integer addressId) {
-		this.addressId = addressId;
+	public void setId(String Id) {
+		this.Id = Id;
 	}
 	public Integer getCustomerId() {
 		return customerId;
