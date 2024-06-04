@@ -13,6 +13,14 @@ public class ProductCategoryService {
         productCategoryDAO = new ProductCategoryDAO(true);
     }
 
+    public ProductCategory getproductCategorybyId(String Id){
+        return productCategoryDAO.getProductCategorybyId(Id);
+    }
+
+    public void deleteProductCategory(String Id){
+        productCategoryDAO.deleteProductCategory(Id);
+    }
+
     public List<ProductCategory> getAllProductCategories() {
         return productCategoryDAO.getAllProductCategories();
     }

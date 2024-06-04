@@ -8,34 +8,39 @@ public class CommerceTrainingApplication {
 		ProductController productController = new ProductController();
 		ProductCategoryController productCategoryController = new ProductCategoryController();
 
-		// Acciones
-		productController.getAllProducts().stream().forEach(product -> {
-			System.out.println(product.getName());
-		});
-		// Add product
-		productController.addProduct(new Product());
+		// // Acciones
+		// productController.getAllProducts().stream().forEach(product -> {
+		// 	System.out.println(product.getName());
+		// });
+		// // Add product
+		// productController.addProduct(new Product());
 
-		productController.getAllProducts().stream().forEach(product -> {
-			System.out.println(product.getName());
-		});
-		// Delete
-		Product productToBeDeleted = new Product();
-		productToBeDeleted.setId("2");
-		productController.deleteProduct(productToBeDeleted);
+		// productController.getAllProducts().stream().forEach(product -> {
+		// 	System.out.println(product.getName());
+		// });
+		// // Delete
+		// Product productToBeDeleted = new Product();
+		// productToBeDeleted.setId("2");
+		// productController.deleteProduct(productToBeDeleted);
 
-		productController.getAllProducts().stream().forEach(product -> {
-			System.out.println(product.getName());
-		});
+		// productController.getAllProducts().stream().forEach(product -> {
+		// 	System.out.println(product.getName());
+		// });
 
-		// Get Product by Id.
-		Product product3 = productController.getProductBySku("PROD03");
-		System.out.println(product3.getName());
-		
+		// // Get Product by Id.
+		// Product product3 = productController.getProductBySku("PROD03");
+		// System.out.println(product3.getName());
 
 		//Get all product categories
 		productCategoryController.getAllProductCategories().stream().forEach(productCaregory -> {
-			System.out.println();
+			System.out.println(productCaregory.getName());
+			System.out.println(productCaregory.getId());
+
 		});
+
+		System.out.println(productCategoryController.getproductCaregorybyId("2").getName());
+
+
 	}
 
 }

@@ -3,7 +3,7 @@ package com.engineering.commerce.entities;
 import java.util.List;
 
 public class ProductCategory {
-	private String key;
+	private String id;
 	private String name;
 	private String slug;
 	private String description;
@@ -13,8 +13,8 @@ public class ProductCategory {
 	private String metaDescription;
 	private String metaKeywords;
 
-	public String getKey() {
-		return key;
+	public String getId() {
+		return id;
 	}
 
 	public String getName() {
@@ -49,8 +49,8 @@ public class ProductCategory {
 		return metaKeywords;
 	}
 
-	public void setKey(String key) {
-		this.key = key;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public void setName(String name) {

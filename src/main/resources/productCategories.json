@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "name": "Electronics",
+        "description": "Devices or equipment intended for everyday use, most often in entertainment, communications and office productivity"
+    },
+    {
+        "id": "2",
+        "name": "Gadgets",
+        "description": "Small electronic device or tool"
+    }
+]
